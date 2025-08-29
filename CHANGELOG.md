@@ -1,5 +1,49 @@
 # Changelog
 
+## [4.0.0](https://github.com/Pennysmith6/eslintrc/compare/v3.3.1...v4.0.0) (2025-08-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Require Node.js `^18.18.0 || ^20.9.0 || >=21.1.0` ([#142](https://github.com/Pennysmith6/eslintrc/issues/142))
+* Set default `schema: []`, drop support for function-style rules ([#139](https://github.com/Pennysmith6/eslintrc/issues/139))
+* Require eslint:all and eslint:recommended as parameters. ([#103](https://github.com/Pennysmith6/eslintrc/issues/103))
+
+### Features
+
+* add `es2023` and `es2024` environments ([#116](https://github.com/Pennysmith6/eslintrc/issues/116)) ([14ddd36](https://github.com/Pennysmith6/eslintrc/commit/14ddd3630843485f8f29f4b0402891a26f9fcf9b))
+* add esN envs for all post-es6 years ([#68](https://github.com/Pennysmith6/eslintrc/issues/68)) ([33b8ee7](https://github.com/Pennysmith6/eslintrc/commit/33b8ee7edbe3c85eda04af8896db71021f172be5))
+* Add types to package ([#179](https://github.com/Pennysmith6/eslintrc/issues/179)) ([cb546be](https://github.com/Pennysmith6/eslintrc/commit/cb546be8ba53abcb4c64ed2fdd3a729dd1337f61))
+* Avoid dirname for built-in configs ([#71](https://github.com/Pennysmith6/eslintrc/issues/71)) ([9b71981](https://github.com/Pennysmith6/eslintrc/commit/9b719813fc6f023b722168a4f67d895106e875ce))
+* Expose loadConfigFile() function ([#160](https://github.com/Pennysmith6/eslintrc/issues/160)) ([59e890f](https://github.com/Pennysmith6/eslintrc/commit/59e890fcd9e03663ac185640d5bed5f1a85bd39b))
+* merge rule.meta.defaultOptions before validation ([#166](https://github.com/Pennysmith6/eslintrc/issues/166)) ([d02f914](https://github.com/Pennysmith6/eslintrc/commit/d02f91452b81caff971f7895237cc4fb002e31da))
+* Require eslint:all and eslint:recommended as parameters. ([#103](https://github.com/Pennysmith6/eslintrc/issues/103)) ([013bdf3](https://github.com/Pennysmith6/eslintrc/commit/013bdf3da1cd1509592d6df0dfed031608c23a7c))
+* Require Node.js `^18.18.0 || ^20.9.0 || &gt;=21.1.0` ([#142](https://github.com/Pennysmith6/eslintrc/issues/142)) ([737eb25](https://github.com/Pennysmith6/eslintrc/commit/737eb25ac686550020b838ccf6efd5cd2aaa449e))
+* Set default `schema: []`, drop support for function-style rules ([#139](https://github.com/Pennysmith6/eslintrc/issues/139)) ([a6c240d](https://github.com/Pennysmith6/eslintrc/commit/a6c240de244b0e94ace4a518f2c67876a91f5882))
+* update globals ([#81](https://github.com/Pennysmith6/eslintrc/issues/81)) ([aefa2a7](https://github.com/Pennysmith6/eslintrc/commit/aefa2a749eeab1d2b872824d2de952e97bc7aa4f))
+* update globals ([#98](https://github.com/Pennysmith6/eslintrc/issues/98)) ([89c504f](https://github.com/Pennysmith6/eslintrc/commit/89c504f216298b8aafc55371a9e75b2e2d4cac40))
+
+
+### Bug Fixes
+
+* add `universal` export to root ([#57](https://github.com/Pennysmith6/eslintrc/issues/57)) ([6b5fc8b](https://github.com/Pennysmith6/eslintrc/commit/6b5fc8b248aa66958ba0c1b05d402c3e509e3098))
+* add missing dependencies ([#5](https://github.com/Pennysmith6/eslintrc/issues/5)) ([ff41a2f](https://github.com/Pennysmith6/eslintrc/commit/ff41a2fee52335ce1b2a8c9827f61b6e7aa2444a))
+* cache compiled config schema ([#9](https://github.com/Pennysmith6/eslintrc/issues/9)) ([04f3cae](https://github.com/Pennysmith6/eslintrc/commit/04f3cae17fe07b2fd0b74fd3e88482b3094e75e3))
+* ConfigArrayFactory was ignoring the resolver option in some places ([#53](https://github.com/Pennysmith6/eslintrc/issues/53)) ([c5d4919](https://github.com/Pennysmith6/eslintrc/commit/c5d49193a30b97e8c6bb2ad6306ee816afe8b3cc))
+* correct `types` field in package.json ([#184](https://github.com/Pennysmith6/eslintrc/issues/184)) ([2f4cf3f](https://github.com/Pennysmith6/eslintrc/commit/2f4cf3fe36ee0df93c1c53f32c030c58db1816a2))
+* ensure config files are files ([#42](https://github.com/Pennysmith6/eslintrc/issues/42)) ([ce78027](https://github.com/Pennysmith6/eslintrc/commit/ce78027f6a319a29fdf0b78ac1e7071373acffc4))
+* Ensure environments in overrides respect files patterns ([#126](https://github.com/Pennysmith6/eslintrc/issues/126)) ([6745421](https://github.com/Pennysmith6/eslintrc/commit/67454216a9dc4ecb850fd80d67ae39cf5799986d)), closes [#125](https://github.com/Pennysmith6/eslintrc/issues/125)
+* include loadRules in internalSlotsMap cache ([#19](https://github.com/Pennysmith6/eslintrc/issues/19)) ([1746840](https://github.com/Pennysmith6/eslintrc/commit/17468407c1baf05747cb261c91f7f7b7c2a82422))
+* package.json version ([2f65358](https://github.com/Pennysmith6/eslintrc/commit/2f653589e59746e25b9178bb5d96e03bac4da9cd))
+* Plugins should always use the same reference ([#91](https://github.com/Pennysmith6/eslintrc/issues/91)) ([2a2bef1](https://github.com/Pennysmith6/eslintrc/commit/2a2bef144e9b5ef0fbf780abae0890e0c1f9d23a)), closes [#89](https://github.com/Pennysmith6/eslintrc/issues/89) [#90](https://github.com/Pennysmith6/eslintrc/issues/90)
+* Properly export module resolver ([#34](https://github.com/Pennysmith6/eslintrc/issues/34)) ([aa38ef4](https://github.com/Pennysmith6/eslintrc/commit/aa38ef40c3123f8f534c7f9b0b7c306f5f011dce))
+* Release version number (refs [#6](https://github.com/Pennysmith6/eslintrc/issues/6)) ([#8](https://github.com/Pennysmith6/eslintrc/issues/8)) ([76796f6](https://github.com/Pennysmith6/eslintrc/commit/76796f66a3a62337c35970dc5d2bd9838f16a574))
+* Update FlatCompat docs + typings to reflect Array ([#99](https://github.com/Pennysmith6/eslintrc/issues/99)) ([5be711e](https://github.com/Pennysmith6/eslintrc/commit/5be711e4e81734f79c62cb9781921a9068de1c54))
+* use custom Rollup plugin for `import.meta.url` ([#77](https://github.com/Pennysmith6/eslintrc/issues/77)) ([18b15ac](https://github.com/Pennysmith6/eslintrc/commit/18b15ac0b0150ad0a4f69e61319e5adaea83a9c7))
+* Use original plugin from disk in FlatCompat ([#137](https://github.com/Pennysmith6/eslintrc/issues/137)) ([1c4cf6a](https://github.com/Pennysmith6/eslintrc/commit/1c4cf6a71378d480323bfdd404c9585bd0d21d65))
+* validate schema for built-in rules ([#14](https://github.com/Pennysmith6/eslintrc/issues/14)) ([8b202ff](https://github.com/Pennysmith6/eslintrc/commit/8b202ff866a39efdaad6394fde9f88372afbfca8))
+* version number and eslint-release version (refs [#6](https://github.com/Pennysmith6/eslintrc/issues/6)) ([8647a61](https://github.com/Pennysmith6/eslintrc/commit/8647a61991fe121f923d33e96232475209b78210))
+
 ## [3.3.1](https://github.com/eslint/eslintrc/compare/v3.3.0...v3.3.1) (2025-03-11)
 
 
