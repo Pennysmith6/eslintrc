@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.3.4](https://github.com/Pennysmith6/eslintrc/compare/eslintrc-v3.3.3...eslintrc-v3.3.4) (2025-12-10)
+
+
+### Bug Fixes
+
+* release v3.3.3 because publishing v3.3.2 failed ([#211](https://github.com/Pennysmith6/eslintrc/issues/211)) ([8aa555a](https://github.com/Pennysmith6/eslintrc/commit/8aa555a3f5fcfb7d99249fb57e819a7b6f635496))
+* Remove name property from all and recommended configs ([#200](https://github.com/Pennysmith6/eslintrc/issues/200)) ([344da49](https://github.com/Pennysmith6/eslintrc/commit/344da491898a2a3595943d4528ba78fe2f238217))
+
 ## [3.3.3](https://github.com/eslint/eslintrc/compare/eslintrc-v3.3.2...eslintrc-v3.3.3) (2025-11-28)
 
 
